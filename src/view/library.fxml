@@ -10,15 +10,22 @@
 <?import java.net.URL?>
 <?import javafx.scene.image.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml"
+<VBox xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="controller.LibraryController"
       alignment="center" spacing="10" 
       styleClass="root"
->
-
-    <Label text="&lt;insert assignment here&gt;"/>
-
+> 
+<HBox alignment="center" spacing="10">
+    
+    <ImageView fx:id="UTSLogo">
+        <image>
+            <Image url="/view/UTS.png"/>
+        </image>
+    </ImageView>
+    <Label styleClass="h1" text="Library System" />
+</HBox>
     <stylesheets>
         <URL value="@style.css"/>
     </stylesheets>
+    
 </VBox>
