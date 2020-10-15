@@ -25,11 +25,11 @@
     <Label styleClass="h1" text="Library System" />
 </HBox>
     <VBox styleClass="footer" alignment="CENTER" spacing="10">
-        <Button styleClass="button" text="Explore Catalogue"/>
-        <Button styleClass="button" text="Patron Record"/>
-        <Button styleClass="button" text="Favourite Books"/>
-        <Button styleClass="button" text="Administration Mode"/>
-        <Button styleClass="button" text="Exit"/>
+        <Button fx:id="exploreCatalogueBtn" styleClass="button" text="Explore Catalogue"/>
+        <Button fx:id="patronRecordBtn" styleClass="button" text="Patron Record"/>
+        <Button fx:id="favouriteBooksBtn" styleClass="button" text="Favourite Books"/>
+        <Button fx:id="adminModeBtn" styleClass="button" text="Administration Mode" onAction="#handleAdmin"/>
+        <Button fx:id="exitBtn" styleClass="button" text="Exit" onAction="#handleExit"/>
     </VBox> 
 <stylesheets>
         <URL value="@style.css"/>
