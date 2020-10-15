@@ -24,7 +24,14 @@
     </ImageView>
     <Label styleClass="h1" text="Library System" />
 </HBox>
-    <stylesheets>
+    <VBox styleClass="footer" alignment="CENTER" spacing="10">
+        <Button styleClass="button" text="Explore Catalogue"/>
+        <Button styleClass="button" text="Patron Record"/>
+        <Button styleClass="button" text="Favourite Books"/>
+        <Button styleClass="button" text="Administration Mode"/>
+        <Button styleClass="button" text="Exit"/>
+    </VBox> 
+<stylesheets>
         <URL value="@style.css"/>
     </stylesheets>
     
