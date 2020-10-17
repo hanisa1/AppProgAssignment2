@@ -21,10 +21,10 @@
     <Label styleClass="h1" text="Library System" />
 </HBox>
     <VBox styleClass="footer" alignment="CENTER" spacing="10">
-        <Button fx:id="addPatronBtn" styleClass="button" text="Add Patron"/>
-        <Button fx:id="removePatronBtn" styleClass="button" text="Remove Patron"/>
-        <Button fx:id="addBookBtn" styleClass="button" text="Add Book"/>
-        <Button fx:id="removeBookBtn" styleClass="button" text="Remove Book"/>
+        <Button fx:id="addPatronBtn" styleClass="button" text="Add Patron" onAction="#handleAddPatron"/>
+        <Button fx:id="removePatronBtn" styleClass="button" text="Remove Patron" onAction="#handleRemovePatron"/>
+        <Button fx:id="addBookBtn" styleClass="button" text="Add Book" onAction="#handleAddBook"/>
+        <Button fx:id="removeBookBtn" styleClass="button" text="Remove Book" onAction="#handleRemoveBook"/>
         <Button fx:id="exitAdminBtn" styleClass="button" text="Exit Administration" onAction="#handleExitAdmin"/>
     </VBox> 
     <stylesheets>

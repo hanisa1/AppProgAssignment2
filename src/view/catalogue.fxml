@@ -8,8 +8,30 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.image.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml">
-
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.CatalogueController"
+      alignment="center" spacing="10" 
+      styleClass="root"
+> 
+<HBox alignment="center" spacing="10">
+    
+    <ImageView fx:id="UTSLogo">
+        <image>
+            <Image url="/view/UTS.png"/>
+        </image>
+    </ImageView>
+    <Label styleClass="h1" text="Library System" />
+</HBox>
+    <VBox styleClass="footer" alignment="CENTER" spacing="10">
+        <Button fx:id="allBooksBtn" styleClass="button" text="All Books"/>
+        <Button fx:id="availableBooksBtn" styleClass="button" text="Available Books"/>
+        <Button fx:id="booksByGenreBtn" styleClass="button" text="Books By Genre"/>
+        <Button fx:id="booksByAuthorBtn" styleClass="button" text="Books By Author"/>
+        <Button fx:id="borrowBooksBtn" styleClass="button" text="Borrow Books"/>
+        <Button fx:id="returnBooksBtn" styleClass="button" text="Return Books"/>
+        <Button fx:id="placeHoldBtn" styleClass="button" text="Place Hold"/>
+        <Button fx:id="exitCatalogueBtn" styleClass="button" text="Exit Catalogue" onAction="#handleExitCatalogue"/>
+    </VBox>
     <stylesheets>
         <URL value="@style.css"/>
     </stylesheets>

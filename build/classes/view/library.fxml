@@ -25,7 +25,7 @@
     <Label styleClass="h1" text="Library System" />
 </HBox>
     <VBox styleClass="footer" alignment="CENTER" spacing="10">
-        <Button fx:id="exploreCatalogueBtn" styleClass="button" text="Explore Catalogue"/>
+        <Button fx:id="exploreCatalogueBtn" styleClass="button" text="Explore Catalogue" onAction="#handleExploreCatalogue"/>
         <Button fx:id="patronRecordBtn" styleClass="button" text="Patron Record"/>
         <Button fx:id="favouriteBooksBtn" styleClass="button" text="Favourite Books"/>
         <Button fx:id="adminModeBtn" styleClass="button" text="Administration Mode" onAction="#handleAdmin"/>

@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import model.Catalogue;
 import model.Library;
 
 public class LibraryController extends Controller<Library> {
@@ -25,6 +26,25 @@ public class LibraryController extends Controller<Library> {
 
     public final Library getLibrary() {
         return model;
+    }
+    
+    public final Catalogue getCatalogue() {
+        return model.getCatalogue();
+    }
+    
+    
+            
+    @FXML private void handleExploreCatalogue(ActionEvent event) throws IOException {
+        try {
+            ViewLoader.showStage(getCatalogue(), "/view/catalogue.fxml", "Catalogue", new Stage());
+        }
+        catch (Exception e){
+            ViewLoader.showStage(e, "/view/error.fxml", "Error", new Stage());
+            
+        }
+        finally {
+        
+        }
     }
     
     @FXML private void handleAdmin(ActionEvent event) throws IOException {
@@ -52,5 +72,7 @@ public class LibraryController extends Controller<Library> {
         
         }
     }
+    
+    
 
 }
