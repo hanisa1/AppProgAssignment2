@@ -12,7 +12,7 @@
     alignment="center" spacing="10" 
     styleClass="root"
 >
-    <ListView fx:id="removePatronsLv"  prefWidth="250" prefHeight="350">
+    <ListView fx:id="removePatronsLv" items="${controller.library.patrons}" prefWidth="250" prefHeight="350">
     </ListView>
     
     <VBox alignment="center" spacing="10" styleClass="body">

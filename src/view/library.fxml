@@ -27,7 +27,7 @@
     <VBox styleClass="footer" alignment="CENTER" spacing="10">
         <Button fx:id="exploreCatalogueBtn" styleClass="button" text="Explore Catalogue" onAction="#handleExploreCatalogue"/>
         <Button fx:id="patronRecordBtn" styleClass="button" text="Patron Record"/>
-        <Button fx:id="favouriteBooksBtn" styleClass="button" text="Favourite Books"/>
+        <Button fx:id="favouriteBooksBtn" styleClass="button" text="Favourite Books" onAction="#handleFav"/>
         <Button fx:id="adminModeBtn" styleClass="button" text="Administration Mode" onAction="#handleAdmin"/>
         <Button fx:id="exitBtn" styleClass="button" text="Exit" onAction="#handleExit"/>
     </VBox> 

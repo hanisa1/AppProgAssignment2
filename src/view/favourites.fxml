@@ -8,7 +8,22 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml">
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.FavouritesController"
+      alignment="center" spacing="10" 
+      styleClass="root">
+    
+    <HBox alignment="center" spacing="10"> 
+        <Label text="Patron ID:"/>
+        <TextField fx:id = "patronTf" />
+        <Button fx:id = "favBtn" disable="true"  text="Show Favourites" onAction="#handleShowFav"/> 
+    </HBox>
+    <VBox alignment="center" spacing="10">
+        <Text fx:id="feedbackTxt" text="No Patron Selected" /> 
+        <ListView fx:id="favouritesLv" prefWidth="400" prefHeight="150">
+        </ListView>
+        <Button text="Close" onAction="#handleClose"/>
+    </VBox>
     
     <stylesheets>
         <URL value="@style.css"/>

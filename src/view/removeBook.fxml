@@ -7,8 +7,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml">
+<VBox xmlns:fx="http://javafx.com/fxml"
+    fx:controller="controller.RemoveBookController"
+    alignment="center" spacing="10" 
+    styleClass="root">
     
+    <ListView fx:id="removeBooksLv" items="${controller.catalogue.allBooks}" prefWidth="250" prefHeight="350">
+    </ListView>
+    
+    <VBox alignment="center" spacing="10" styleClass="body">
+        <Button text="Remove Book" onAction="#handleRemoveBook"/> 
+        <Button text="Close" onAction="#handleClose"/> 
+    </VBox>
     <stylesheets>
         <URL value="@style.css"/>
     </stylesheets>

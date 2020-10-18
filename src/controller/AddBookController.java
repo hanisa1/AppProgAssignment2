@@ -8,8 +8,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import model.Catalogue;
+import model.Library;
 
-public class AddBookController extends Controller<Catalogue>{
+public class AddBookController extends Controller<Library>{
 
     @FXML private TextField titleTf;
     @FXML private TextField authorTf;
@@ -17,7 +18,7 @@ public class AddBookController extends Controller<Catalogue>{
     
     
     public final Catalogue getCatalogue(){
-        return model;
+        return model.getCatalogue();
     }
     
     @FXML private void handleAddBook(ActionEvent event) throws IOException {

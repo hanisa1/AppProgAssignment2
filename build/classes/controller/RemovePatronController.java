@@ -18,6 +18,11 @@ public class RemovePatronController extends Controller<Library>{
         return model;
     }
     
+    
+    @FXML private void initialize() {
+	getLibrary().getPatrons();
+    }
+    
     private Patron getSelectedPatron() {
 		return removePatronsLv.getSelectionModel().getSelectedItem();
     }

@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import model.Catalogue;
 import model.Library;
+import model.Patron;
 
 public class LibraryController extends Controller<Library> {
 
@@ -50,6 +51,19 @@ public class LibraryController extends Controller<Library> {
     @FXML private void handleAdmin(ActionEvent event) throws IOException {
         try {
             ViewLoader.showStage(getLibrary(), "/view/admin.fxml", "Administration Mode", new Stage());
+        }
+        catch (Exception e){
+            ViewLoader.showStage(e, "/view/error.fxml", "Error", new Stage());
+            
+        }
+        finally {
+        
+        }
+    }
+    
+    @FXML private void handleFav(ActionEvent event) throws IOException {
+        try {
+            ViewLoader.showStage(getLibrary(), "/view/favourites.fxml", "Favourites", new Stage());
         }
         catch (Exception e){
             ViewLoader.showStage(e, "/view/error.fxml", "Error", new Stage());
