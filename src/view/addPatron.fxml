@@ -17,9 +17,12 @@
         <Label text="Patron ID:" GridPane.columnIndex="0" GridPane.rowIndex="0"/> 
         <TextField fx:id="patronIdTf" GridPane.columnIndex="1" GridPane.rowIndex="0"/>  
         <Label text="Patron Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/> 
-        <TextField fx:id="patronNAmeTf" GridPane.columnIndex="1" GridPane.rowIndex="1"/> 
+        <TextField fx:id="patronNameTf" GridPane.columnIndex="1" GridPane.rowIndex="1"/> 
     </GridPane>
-    
+    <VBox alignment="center" spacing="10" styleClass="body">
+        <Button text="Add Patron" onAction="#handleAdd"/> 
+        <Button text="Close" onAction="#handleClose"/> 
+    </VBox>
     <stylesheets>
         <URL value="@style.css"/>
     </stylesheets>

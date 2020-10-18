@@ -3,10 +3,10 @@
 [y] The Administration menu window is at least partially done.
 [y] The Administration menu window is done.
 [y] The Catalogue menu window is at least partially done.
-[?] The Catalogue menu window is done.
-[?] The Add Patron and Book windows are at least partially done.
-[?] The Add Patron and Book windows are done.
-[?] The Remove Patron and Book windows are at least partially done.
+[y] The Catalogue menu window is done.
+[y] The Add Patron and Book windows are at least partially done.
+[y] The Add Patron and Book windows are done.
+[y] The Remove Patron and Book windows are at least partially done.
 [?] The Remove Patron and Book windows are done.
 [?] The Patron Record and Patron Favourites windows are at least partially done.
 [?] The Patron Record and Patron Favourites windows are done.
