@@ -23,8 +23,8 @@
     <Label styleClass="h1" text="Library System" />
 </HBox>
     <VBox styleClass="footer" alignment="CENTER" spacing="10">
-        <Button fx:id="allBooksBtn" styleClass="button" text="All Books"/>
-        <Button fx:id="availableBooksBtn" styleClass="button" text="Available Books"/>
+        <Button fx:id="allBooksBtn" styleClass="button" text="All Books" onAction="#handleAllBooks"/>
+        <Button fx:id="availableBooksBtn" styleClass="button" text="Available Books" onAction="#handleAvailable"/>
         <Button fx:id="booksByGenreBtn" styleClass="button" text="Books By Genre"/>
         <Button fx:id="booksByAuthorBtn" styleClass="button" text="Books By Author"/>
         <Button fx:id="borrowBooksBtn" styleClass="button" text="Borrow Books"/>

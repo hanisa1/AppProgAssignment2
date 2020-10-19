@@ -10,6 +10,34 @@ import model.Catalogue;
 
 public class CatalogueController extends Controller<Catalogue>{
     
+    public final Catalogue getCatalogue() { return model; }
+    
+    @FXML private void handleAllBooks(ActionEvent event) throws IOException {
+        try {
+            ViewLoader.showStage(getCatalogue(), "/view/showAllBooks.fxml", "Complete Catalogue", new Stage());
+        }
+        catch (Exception e){
+            ViewLoader.showStage(e, "/view/error.fxml", "Error", new Stage());
+            
+        }
+        finally {
+        
+        }
+    }
+    
+    @FXML private void handleAvailable(ActionEvent event) throws IOException {
+        try {
+            ViewLoader.showStage(getCatalogue(), "/view/showAvailableBooks.fxml", "Available Books", new Stage());
+        }
+        catch (Exception e){
+            ViewLoader.showStage(e, "/view/error.fxml", "Error", new Stage());
+            
+        }
+        finally {
+        
+        }
+    }
+    
     @FXML private void handleExitCatalogue(ActionEvent event) throws IOException {
         try {
             stage.close();

@@ -74,6 +74,19 @@ public class LibraryController extends Controller<Library> {
         }
     }
     
+    @FXML private void handleRecord(ActionEvent event) throws IOException {
+        try {
+            ViewLoader.showStage(getLibrary(), "/view/record.fxml", "Patron Record", new Stage());
+        }
+        catch (Exception e){
+            ViewLoader.showStage(e, "/view/error.fxml", "Error", new Stage());
+            
+        }
+        finally {
+        
+        }
+    }
+    
     @FXML private void handleExit(ActionEvent event) throws IOException {
         try {
             stage.close();
