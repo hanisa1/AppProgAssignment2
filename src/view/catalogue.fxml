@@ -25,8 +25,8 @@
     <VBox styleClass="footer" alignment="CENTER" spacing="10">
         <Button fx:id="allBooksBtn" styleClass="button" text="All Books" onAction="#handleAllBooks"/>
         <Button fx:id="availableBooksBtn" styleClass="button" text="Available Books" onAction="#handleAvailable"/>
-        <Button fx:id="booksByGenreBtn" styleClass="button" text="Books By Genre"/>
-        <Button fx:id="booksByAuthorBtn" styleClass="button" text="Books By Author"/>
+        <Button fx:id="booksByGenreBtn" styleClass="button" text="Books By Genre" onAction="#handleBooksByGenre"/>
+        <Button fx:id="booksByAuthorBtn" styleClass="button" text="Books By Author" onAction="#handleBooksByAuthor"/>
         <Button fx:id="borrowBooksBtn" styleClass="button" text="Borrow Books"/>
         <Button fx:id="returnBooksBtn" styleClass="button" text="Return Books"/>
         <Button fx:id="placeHoldBtn" styleClass="button" text="Place Hold"/>

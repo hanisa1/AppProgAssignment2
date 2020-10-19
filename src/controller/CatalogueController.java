@@ -38,6 +38,32 @@ public class CatalogueController extends Controller<Catalogue>{
         }
     }
     
+    @FXML private void handleBooksByAuthor(ActionEvent event) throws IOException {
+        try {
+            ViewLoader.showStage(getCatalogue(), "/view/showBooksByAuthor.fxml", "Browse by Author", new Stage());
+        }
+        catch (Exception e){
+            ViewLoader.showStage(e, "/view/error.fxml", "Error", new Stage());
+            
+        }
+        finally {
+        
+        }
+    }
+    
+    @FXML private void handleBooksByGenre(ActionEvent event) throws IOException {
+        try {
+            ViewLoader.showStage(getCatalogue(), "/view/showBooksByGenre.fxml", "Browse by Genre", new Stage());
+        }
+        catch (Exception e){
+            ViewLoader.showStage(e, "/view/error.fxml", "Error", new Stage());
+            
+        }
+        finally {
+        
+        }
+    }
+    
     @FXML private void handleExitCatalogue(ActionEvent event) throws IOException {
         try {
             stage.close();
