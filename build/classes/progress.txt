@@ -11,7 +11,7 @@
 [y] The Patron Record and Patron Favourites windows are at least partially done.
 [y] The Patron Record and Patron Favourites windows are done.
 [y] The Show All Books and Show Available Books windows are at least partially done.
-[?] The Show All Books and Show Available Books windows are done.
+[y] The Show All Books and Show Available Books windows are done.
 [?] The Show By Genre and By Author windows are at least partially done.
 [?] The Show By Genre and By Author windows are done.
 [?] The Borrow window is at least partially done.
